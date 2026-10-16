@@ -3,7 +3,7 @@
 - [ ] 1.1 Go module `github.com/nodelogicau/intentions-bench`, `cmd/intentions-bench` with phases `run`, `score`, `report` and shared flags (`--impl`, `--scenarios`, `--classes`, `--ids`, `--repeats`, `--max-exchanges`, `--concurrency`, `--dry-run`, `--model`, `--effort`, `--classifier-model`, `--judge-model`); the `ANTHROPIC_API_KEY` refusal.
 - [ ] 1.2 Makefile (`build`, `test`, `lint`), `.golangci.yml`, and CI running unit tests and lint only, with no model calls.
 - [ ] 1.3 Copy `agent`, `impl`, `run`, the report shell and the fake-server pattern from particulars-bench at a recorded commit; note the source commit in each package comment.
-- [ ] 1.4 Create `nodelogicau/intentions-bench` on GitHub.
+- [x] 1.4 Create `nodelogicau/intentions-bench` on GitHub.
 
 ## 2. Scenario format
 
