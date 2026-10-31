@@ -25,8 +25,8 @@ tests what the format is mostly about:
   (committing the person to more than they said) and **deflation** (dropping what they meant)
   kept apart.
 - **Field fidelity.** Is the window kept as the person said it? Each window is scored
-  `equal`, `wider`, `narrower` or `disjoint` against gold. `narrower` means a slot was
-  invented, the failure the format exists to prevent.
+  `equal`, `wider`, `narrower`, `disjoint` or `overlapping` against gold. `narrower` means a
+  slot was invented, the failure the format exists to prevent.
 - **Restraint.** Some acts are the person's: selecting a placement, accepting or declining,
   adopting a desire, retiring, firming. The format refuses some of these from a harness, and
   only the agent's judgement stops the rest. Restraint is scored both ways: **overreach**

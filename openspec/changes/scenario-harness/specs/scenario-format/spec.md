@@ -40,14 +40,14 @@ A seed SHALL be a directory holding a complete workspace at the format version t
 - **THEN** the scenario set is refused, naming the seed and the validation error
 
 ### Requirement: Gold file
-A gold file SHALL list, by `key`, every object a correct run leaves in the workspace beyond the seed, and every seed object a correct run changes. Each entry SHALL carry `kind` (`desire`, `intention`, `terminus`, `availability`, `commitment`) and the scheduling-projection fields to be scored. A seed object a correct run leaves untouched SHALL NOT be listed. An empty gold file SHALL mean a correct run writes nothing.
+A gold file SHALL list, by `key`, every object a correct run leaves in the workspace beyond the seed, and every seed object a correct run changes. Each entry SHALL carry `kind` (`desire`, `intention`, `terminus`, `availability`, `commitment`) and the fields to be scored, drawn from `window`, `duration`, `capacity`, `stability`, `subject`, `activity`, `activities`, `location`, `parties`, `serves`, `cadence`, `auto_select`, `auto_firm`, `retired` and `placed`; any other field SHALL be refused. A desire whose `retired` is `adopted` SHALL name the key of its intention in `adopted_as`, and `adopted_as` SHALL NOT appear without it. A key of kind `commitment` SHALL be a seed key. A seed object a correct run leaves untouched SHALL NOT be listed. An empty gold file SHALL mean a correct run writes nothing.
 
 #### Scenario: Passing remark about the past
 - **WHEN** a scenario's only beat is "Had a great lunch with Sam yesterday" and its gold file is empty
 - **THEN** any object the agent writes is scored as inflation from `none`
 
 ### Requirement: Gold is checked by building it
-For each scenario the harness SHALL build the gold workspace by applying the gold entries to a copy of the seed through the pinned reference CLI, and SHALL refuse the scenario set if the result fails `validate`.
+For each scenario the harness SHALL build the gold workspace by writing the gold entries into a copy of the seed as format objects, and SHALL refuse the scenario set if the pinned reference CLI's `validate` rejects the result. `placed` SHALL be scored but not built.
 
 #### Scenario: Gold intention serves a tentative terminus
 - **WHEN** a gold intention's `serves` reaches only a terminus whose gold `stability` is `tentative`
