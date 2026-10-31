@@ -1,0 +1,4 @@
+- key: "health"
+  kind: "terminus"
+  title: "Being someone who looks after their health"
+  stability: "tentative"

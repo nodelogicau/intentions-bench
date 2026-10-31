@@ -1,0 +1,9 @@
+id: policy-select-tentative-01
+class: [rung/policy]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "For things I haven't committed to yet, feel free to pick the time yourself, as long as they're under an hour."
+card: []
+default: "I'm not sure yet."
+gold: gold/policy-select-tentative-01.yaml

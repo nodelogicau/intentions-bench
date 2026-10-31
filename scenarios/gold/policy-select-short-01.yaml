@@ -1,0 +1,5 @@
+- key: "short-select"
+  kind: "terminus"
+  title: "Short things get scheduled without asking"
+  stability: "tentative"
+  auto_select: {max_duration: "PT30M"}

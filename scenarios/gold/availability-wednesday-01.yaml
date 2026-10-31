@@ -1,0 +1,5 @@
+- key: "wednesday"
+  kind: "availability"
+  title: "Wednesday evening"
+  window: {calendar: "2026-10-14", clock: "18:00/20:00"}
+  capacity: "PT2H"

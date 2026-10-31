@@ -1,0 +1,9 @@
+id: terminus-writer-01
+class: [rung/terminus]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Being a careful writer matters to me. It's part of who I am."
+card: []
+default: "I'm not sure yet."
+gold: gold/terminus-writer-01.yaml

@@ -1,0 +1,11 @@
+id: int_01a18f49-c2e9-775e-8e79-a002cd24d5b4
+version: sha256:c397c386543e45ff2bbd198e769661b8afc4f48c7538db5182075dcb8428d9f2
+subject: https://example.com/people/ada
+title: Being someone who keeps small things moving
+stability: firm
+serves: []
+auto_select: {max_duration: PT1H}
+source:
+  author: https://example.com/people/ada
+timestamp: 2026-10-04T22:00:00Z
+acknowledgements: []

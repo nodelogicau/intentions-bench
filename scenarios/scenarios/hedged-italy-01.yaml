@@ -1,0 +1,9 @@
+id: hedged-italy-01
+class: [rung/hedged]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Maybe I'll go to Italy next year, if work ever calms down."
+card: []
+default: "I'm not sure yet."
+gold: gold/hedged-italy-01.yaml

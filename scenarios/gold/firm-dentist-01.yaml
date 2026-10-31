@@ -1,0 +1,7 @@
+- key: "dentist"
+  kind: "intention"
+  title: "Dentist check-up"
+  duration: "PT45M"
+  window: {calendar: "2026-W43"}
+  stability: "tentative"
+  serves: [follow-through]

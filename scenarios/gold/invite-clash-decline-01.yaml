@@ -1,0 +1,5 @@
+- key: "demo"
+  kind: "commitment"
+  parties: 
+    - {uri: "https://example.com/people/ada", status: "declined"}
+    - {uri: "https://example.com/people/northwind", status: "accepted"}

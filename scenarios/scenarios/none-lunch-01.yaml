@@ -1,0 +1,9 @@
+id: none-lunch-01
+class: [rung/none]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Had a great lunch with Sam yesterday."
+card: []
+default: "I'm not sure yet."
+gold: gold/none-lunch-01.yaml

@@ -1,0 +1,8 @@
+- key: "bank"
+  kind: "intention"
+  title: "Call the bank"
+  duration: "PT15M"
+  window: {calendar: "2026-W42"}
+  stability: "tentative"
+  serves: [small-things]
+  placed: true

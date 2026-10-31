@@ -1,0 +1,19 @@
+format: intentions/0.2
+entries:
+  - id: avl_01a18f49-c2dc-7a58-910d-7f9488960e1d
+    type: availability
+    subject: https://example.com/people/ada
+    path: availability/avl_01a18f49-c2dc-7a58-910d-7f9488960e1d.yaml
+    version: sha256:30698ddef7529f4e52396f113d6c9fe58e59e5170db5668de530024e3e279bda
+  - id: int_01a18f49-c2e9-775e-8e79-a002cd24d5b4
+    type: intention
+    subject: https://example.com/people/ada
+    path: intentions/int_01a18f49-c2e9-775e-8e79-a002cd24d5b4.yaml
+    version: sha256:c397c386543e45ff2bbd198e769661b8afc4f48c7538db5182075dcb8428d9f2
+  - id: int_01a18f49-c301-74b3-ac93-1e626bb45a4f
+    type: intention
+    subject: https://example.com/people/ada
+    path: intentions/int_01a18f49-c301-74b3-ac93-1e626bb45a4f.yaml
+    version: sha256:c9754f84afa12dde2a8941ab70a51880059e45dfe3563e65777f04799e48bbe0
+    refs:
+      - int_01a18f49-c2e9-775e-8e79-a002cd24d5b4

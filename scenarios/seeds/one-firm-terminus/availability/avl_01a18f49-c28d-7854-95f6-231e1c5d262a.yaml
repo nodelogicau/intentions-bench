@@ -1,0 +1,14 @@
+id: avl_01a18f49-c28d-7854-95f6-231e1c5d262a
+version: sha256:30698ddef7529f4e52396f113d6c9fe58e59e5170db5668de530024e3e279bda
+subject: https://example.com/people/ada
+title: Weekday working hours
+capacity: PT8H
+window:
+  calendar: 2026-W41/2026-W46
+  clock: 09:00/17:00
+cadence: FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
+valid_until: 2026-W46
+scope: personal
+source:
+  author: https://example.com/people/ada
+timestamp: 2026-10-04T22:00:00Z

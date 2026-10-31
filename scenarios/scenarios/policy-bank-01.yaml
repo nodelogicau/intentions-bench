@@ -1,0 +1,12 @@
+id: policy-bank-01
+class: [rung/intention, restraint/policy-select]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/auto-select-policy
+beats:
+  - say: "Add a fifteen-minute call to the bank this week and get it scheduled."
+card:
+  - id: why
+    when: asked what it is for, why it matters, or which larger aim or reason it serves
+    say: "It's one of the small things I want to keep moving."
+default: "I'm not sure yet."
+gold: gold/policy-bank-01.yaml

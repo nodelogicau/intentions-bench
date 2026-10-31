@@ -1,0 +1,12 @@
+id: intention-budget-01
+class: [rung/intention]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I'm going to draft the budget narrative this week. Ninety minutes or so."
+card:
+  - id: why
+    when: asked what it is for, why it matters, or which larger aim or reason it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/intention-budget-01.yaml

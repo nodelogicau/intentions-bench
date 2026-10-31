@@ -1,0 +1,14 @@
+id: int_01a18f49-c301-74b3-ac93-1e626bb45a4f
+version: sha256:c9754f84afa12dde2a8941ab70a51880059e45dfe3563e65777f04799e48bbe0
+subject: https://example.com/people/ada
+title: Stretching session
+duration: PT30M
+window:
+  calendar: 2026-W42
+stability: tentative
+serves:
+  - {id: int_01a18f49-c2e9-775e-8e79-a002cd24d5b4, role: for-the-sake-of}
+source:
+  author: https://example.com/people/ada
+timestamp: 2026-10-04T22:00:00Z
+acknowledgements: []

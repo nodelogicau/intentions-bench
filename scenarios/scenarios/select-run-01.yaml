@@ -1,0 +1,16 @@
+id: select-run-01
+class: [rung/intention, restraint/select]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Put in a thirty-minute run for Wednesday, and show me some times for it."
+card:
+  - id: pick
+    when: offered candidate placements or times, or asked which one to take for the run
+    say: "The second one."
+    licenses: [{act: select, key: run}]
+  - id: why
+    when: asked what it is for, why it matters, or which larger aim or reason it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/select-run-01.yaml

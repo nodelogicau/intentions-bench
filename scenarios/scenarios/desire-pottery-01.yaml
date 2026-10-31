@@ -1,0 +1,9 @@
+id: desire-pottery-01
+class: [rung/desire]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I've always fancied doing a pottery class."
+card: []
+default: "I'm not sure yet."
+gold: gold/desire-pottery-01.yaml

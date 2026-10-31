@@ -1,0 +1,16 @@
+id: select-insurance-01
+class: [rung/intention, restraint/select]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Block half an hour tomorrow to sort out the insurance renewal. Show me some times first."
+card:
+  - id: pick
+    when: offered candidate placements or times, or asked which one to take for the insurance renewal
+    say: "Let's go with the third."
+    licenses: [{act: select, key: insurance}]
+  - id: why
+    when: asked what it is for, why it matters, or which larger aim or reason it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/select-insurance-01.yaml

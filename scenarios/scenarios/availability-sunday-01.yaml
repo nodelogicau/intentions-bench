@@ -1,0 +1,9 @@
+id: availability-sunday-01
+class: [rung/availability]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I'm free on Sunday afternoon, from one till five."
+card: []
+default: "I'm not sure yet."
+gold: gold/availability-sunday-01.yaml

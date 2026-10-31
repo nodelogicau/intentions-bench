@@ -1,0 +1,29 @@
+format: intentions/0.2
+entries:
+  - id: avl_01a18f49-c3a5-7dbf-8718-a8d2acac9d30
+    type: availability
+    subject: https://example.com/people/ada
+    path: availability/avl_01a18f49-c3a5-7dbf-8718-a8d2acac9d30.yaml
+    version: sha256:30698ddef7529f4e52396f113d6c9fe58e59e5170db5668de530024e3e279bda
+  - id: cmt_01a108ee-5700-7270-ad68-65571cae440a
+    type: commitment
+    path: commitments/cmt_01a108ee-5700-7270-ad68-65571cae440a.yaml
+    version: sha256:1ba2192b491a78dbb142d5cdf5576c353e4c8ecd950e8b6498cb4a49049691e4
+  - id: int_01a18f49-c3b0-7ce4-be04-3fe7848b4530
+    type: intention
+    subject: https://example.com/people/ada
+    path: intentions/int_01a18f49-c3b0-7ce4-be04-3fe7848b4530.yaml
+    version: sha256:c397c386543e45ff2bbd198e769661b8afc4f48c7538db5182075dcb8428d9f2
+  - id: int_01a18f49-c3c7-7bcb-9737-2d7e455979b3
+    type: intention
+    subject: https://example.com/people/ada
+    path: intentions/int_01a18f49-c3c7-7bcb-9737-2d7e455979b3.yaml
+    version: sha256:dcae525a96c700bd9af7dab8e0380c0d31e7d064eb20fdedf2e0c208e11caae3
+    refs:
+      - int_01a18f49-c3b0-7ce4-be04-3fe7848b4530
+  - id: res_01a18f49-c3dd-7f1b-96ef-56b1c296c8a1
+    type: resolution
+    path: resolutions/res_01a18f49-c3dd-7f1b-96ef-56b1c296c8a1.yaml
+    version: sha256:f351421dc4d593c686f906ecb5b6370dc51596993972be2155e111d756a59371
+    refs:
+      - int_01a18f49-c3c7-7bcb-9737-2d7e455979b3

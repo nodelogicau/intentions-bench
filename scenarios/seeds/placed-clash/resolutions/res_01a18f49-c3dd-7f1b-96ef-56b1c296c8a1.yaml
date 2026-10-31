@@ -1,0 +1,13 @@
+id: res_01a18f49-c3dd-7f1b-96ef-56b1c296c8a1
+version: sha256:f351421dc4d593c686f906ecb5b6370dc51596993972be2155e111d756a59371
+intention: int_01a18f49-c3c7-7bcb-9737-2d7e455979b3
+placement:
+  start: 2026-10-14T09:00:00+11:00
+  duration: PT2H
+selector: person
+candidates_considered: 5
+source:
+  author: https://example.com/people/ada
+timestamp: 2026-10-11T21:00:00Z
+supply:
+  - avl_01a18f49-c3a5-7dbf-8718-a8d2acac9d30
