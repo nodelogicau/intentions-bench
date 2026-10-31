@@ -5,8 +5,8 @@ Benchmarks for implementations of the [Intentions Format](https://github.com/nod
 > **Status: first run reported.** The harness and 37 scenarios are in place; the first report,
 > intentions 0.16.0 with a Haiku 5.5 agent, is in
 > [`reports/2026-10-31-intentions-0.16.0-haiku-5-5/`](reports/2026-10-31-intentions-0.16.0-haiku-5-5/report.md).
-> The design and requirements are in
-> [`openspec/changes/scenario-harness/`](openspec/changes/scenario-harness/).
+> The requirements are in [`openspec/specs/`](openspec/specs/); the design is in the archived
+> change, [`openspec/changes/archive/2026-10-31-scenario-harness/`](openspec/changes/archive/2026-10-31-scenario-harness/).
 
 Intentions implementations hold what a person means to do; an agent decides what to write
 there. So, as with [particulars-bench](https://github.com/nodelogicau/particulars-bench),
@@ -84,7 +84,7 @@ its runs are excluded as infrastructure failures rather than scored.
 
 ## Open questions
 
-Recorded in the change's [`design.md`](openspec/changes/scenario-harness/design.md):
+Recorded in the change's [`design.md`](openspec/changes/archive/2026-10-31-scenario-harness/design.md):
 
 - **Assent to firm versus assent to select.** Over MCP a harness may pass on the person's
   choice with `select`, but `intention_firm` from a harness is refused even when the person
