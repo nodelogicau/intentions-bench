@@ -43,6 +43,6 @@
 
 ## 7. First run
 
-- [ ] 7.1 Run the reference CLI with `--repeats 3`; commit the report under `reports/` with the date and versions.
+- [x] 7.1 Run the reference CLI with `--repeats 3`; commit the report under `reports/` with the date and versions.
 - [x] 7.2 Review classifier routing for licence-bearing entries by hand; revise any card whose `when` lines route ambiguously.
 - [ ] 7.3 Link the repository from the intentions README.

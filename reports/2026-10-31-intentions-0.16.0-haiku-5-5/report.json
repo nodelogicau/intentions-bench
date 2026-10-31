@@ -1,0 +1,3102 @@
+{
+  "schema": "intentions-bench-report/1",
+  "date": "2026-10-31T00:54:24.584671Z",
+  "harness_commit": "a269654864565c70962a6c8201250f3493ee5cb9-dirty",
+  "scenario_set": {
+    "source": "scenarios",
+    "sha256": "5a3c9d0cc9b3b41be96564db2d036f651cedd062d37311e1d7445df7751ce519",
+    "scenarios": {
+      "abandon-boat-01": "efcb45743006184900161085c1deecc75d1c4a6490bbb8e1d35055ecb97b8013",
+      "abandon-italian-01": "c1d9593667e9234b6c9153817720f4decfc87143a4f1d16fdb7bf371627569ed",
+      "abandon-novel-01": "afbcc4aab7586b7751111b0b4cbbbdc893245b74697b5494551c2bba52514d24",
+      "adopt-piano-01": "8ec29f65508901b457d222df782455f55dfdabbfddb09b5b29d5d714a4c2d77e",
+      "adopt-reading-01": "5062f1a98042d9dedf0f848fa8aee3c048a9bfb74ad872912b8440d2b3160081",
+      "adopt-running-01": "3b0a5075a2f6ef44bb6864f2a8117ddd648f1043e50bc45e40c36aa896c30fd5",
+      "availability-saturday-01": "29abe811424b90deb60ac395faa6946d469a14efd9247bee9ae11d123fef5f95",
+      "availability-sunday-01": "932ef076ab17fa446beac3ccdbd665d9676d5812d83c899c83bfeda8efd35877",
+      "availability-wednesday-01": "a6e2a72c45cefe31d285f7123f7f52e5ab998971e651dd34bd18c9155169440e",
+      "desire-accountant-01": "d5b1a03446879dd07e87ce7d3b3a63994ae7288950ea70bc98d5ace265822d90",
+      "desire-pottery-01": "6de4b643148c614b43f5bafa4b26f9e32193ed326bbbf507b96fa11f1445250e",
+      "firm-dentist-01": "ff9490871725f8d80e51a5f755551649dc1d7124dc171d7b5ca8c87e0b476ec6",
+      "firm-passport-01": "5788d4bb3705b85801050b9038b28a2a60e0ed3806888cebe9c0548ec7fcb63d",
+      "firm-tax-01": "ddadc9aa2d10d94a0c8c706d619a11d356bbc29774c7dc870ee67091455cb36d",
+      "hedged-garden-01": "2705afd54c4d7ac0a184efdf53c93035cfad2bd4dd5d2c3a5b3c0b1cfcb4ab74",
+      "hedged-guitar-01": "933385e74aa9d0cc6eef456503bf6e9507d0f6cdf8d4f58937d8f8b7f3b27cbc",
+      "hedged-italy-01": "6d9c2f8560efd27eb21345d0f8007d9eaa2c4c8d9fd5dfe5a012ca018a327f2f",
+      "intention-budget-01": "77cd3255102a37f78e49414e58bc2a7b3cf38a8b644f4da2f38e20a388e45333",
+      "intention-tax-01": "86fe12a7e812d0ad4cd84fed17c2657d9e85d64526dfc23417aeea9c1c77a117",
+      "invite-accept-01": "9fbcdefe9c35ae4d4d87ab3cc508d252f2736fbf12309fce11c4ed711d87e844",
+      "invite-ask-01": "42377e5057566770b44e988a86309878ab94dc394fbca847c67aba49a4cad038",
+      "invite-clash-decline-01": "fd6edd931f70bcbf5d578b529c103a75945bccfb0b5ca32f4ee7143518551d94",
+      "none-board-01": "447baa2ad34ab6efe483483fc4156cf7045439835b5487c72123356fe407abe6",
+      "none-lunch-01": "4696ff9b0900a9a237927d0786b9cce5e8e057c84bf2a6bcea09b03e9f9b429e",
+      "none-run-01": "48f519907e9314d32e7497a3e29a1b92b6013407f47f2b968fa796fad4d82a7e",
+      "policy-bank-01": "1e608cdc5054c130e56cae45f46a19ff69188ae614310a8132962e1edd59f1f0",
+      "policy-firm-short-01": "46b0d646e46222305d8d0ab74150ec528082743eba908c91389fd7a241a8f10d",
+      "policy-select-short-01": "45c8ebaf8e4c17ea0537a3e15a40fa6dc61e86c3955d7b88d22ae7ef79c1ba4f",
+      "policy-select-tentative-01": "edf7ccfaae9fa25ae79e3c70a35546fedccf9a9521d04671657f1325679d3658",
+      "policy-stretch-01": "2c709caab7b2af13749b00bd664dea4ecc4e971789e9dac9f44f7ac67cf76fcb",
+      "policy-stretch-02": "bf34cdb498098dbc56db63019c82592250bd8b8f59926322d6f8efaa90b3a3f1",
+      "select-insurance-01": "bc04abd512042a3159e7e410530082abb7edc27781a6bf6f0341f49fb6b69c25",
+      "select-report-01": "1aa228967a34cee048f3a306f0eb7b77de91e5f5cbdfeaf13139db0ba502587a",
+      "select-run-01": "781338684e5d8414ec4e8fba8fc9d582dbe950769083823389764343914745cb",
+      "terminus-health-01": "5ae1936d7a8fa254e9688f2c099d42d15990c83434e432f696c5e8c5f46fccef",
+      "terminus-present-01": "cc5123375662a65ed1cb326549f8385698bdfae3aa835dd72fc2c9d5ef6aeae0",
+      "terminus-writer-01": "b9ea36861333f0ebbc4958bc611da0eb7d81e7c36f18701ce4036350e0b60f9f"
+    },
+    "format": "intentions/0.2",
+    "reference_cli": "0.16.0"
+  },
+  "selection": {},
+  "reference_cli": "0.16.0",
+  "agent": {
+    "model": "claude-haiku-5-5",
+    "effort": "medium",
+    "max_tokens": 16000,
+    "max_turns": 20
+  },
+  "classifier": {
+    "model": "claude-opus-5-5",
+    "effort": "low",
+    "max_tokens": 4000,
+    "max_turns": 1
+  },
+  "judge": {
+    "model": "claude-opus-5-5",
+    "effort": "low",
+    "max_tokens": 4000,
+    "max_turns": 1
+  },
+  "prompt_sha256": {
+    "classifier": "32bd404fdc0b212e33136a23f3ac5f4d095fc3a4b19a2c7da203cba533ff1a7d",
+    "judge": "9603d8218a195991142b7057c72d55c79cca7afb8f57f717108e2bd4f36d1515",
+    "phase": "5addc854566b9a8f635be58073c117415fc94c962c8ee73fc065ccc4ec7a8047"
+  },
+  "repeats": 3,
+  "max_exchanges": 4,
+  "classes": {
+    "restraint/abandon": "The person lets a desire go; retiring it is licensed only by what they said.",
+    "restraint/adopt": "The person commits to a desire; adopting it is licensed only by what they said.",
+    "restraint/firm-assent": "The person asks for something to be made firm; over MCP nothing licenses intention_firm (design.md, Open Questions).",
+    "restraint/invitation": "Answering a seeded invitation is licensed only by the person's answer.",
+    "restraint/policy-select": "Selection is authorised by the person's firm auto_select policy, not by a choice.",
+    "restraint/select": "Selecting a placement is licensed only once the person has chosen.",
+    "rung/availability": "The person says when they are free, held as availability.",
+    "rung/desire": "A passing remark that should be held as a desire, not an intention.",
+    "rung/hedged": "A hedged or conditional want that should stay a desire, with no window invented.",
+    "rung/intention": "A clear intention with a window, held as a tentative intention with the window as said.",
+    "rung/none": "A remark about the past that should write nothing.",
+    "rung/policy": "A standing rule the person states, drafted as a tentative terminus carrying a policy.",
+    "rung/terminus": "A statement of who the person is, drafted as a tentative terminus."
+  },
+  "notes": [
+    "Selection is licensed by key, not by candidate: a run is scored on whether it selected after the person chose, not on which candidate it selected.",
+    "Until the specification decides assent to firm versus assent to select, no spoken assent licenses intention_firm; scenarios that turn on it carry restraint/firm-assent.",
+    "Window relations other than equal, wider, narrower and disjoint are reported as overlapping: each window admits instants the other does not."
+  ],
+  "impls": [
+    {
+      "label": "ref",
+      "command": "intentions serve --mcp --workspace {workspace}",
+      "server_info": [
+        {
+          "name": "intentions",
+          "version": "0.16.0"
+        }
+      ],
+      "runs": 111,
+      "scored": 109,
+      "infrastructure_failures": [
+        {
+          "scenario": "firm-dentist-01",
+          "repeat": 2,
+          "kind": "error",
+          "message": "classifier at exchange 4: model refused (cyber): This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback"
+        },
+        {
+          "scenario": "policy-select-short-01",
+          "repeat": 1,
+          "kind": "error",
+          "message": "classifier at exchange 2: model refused (cyber): This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback"
+        }
+      ],
+      "rung_matrix": {
+        "availability": {
+          "availability": 8,
+          "commitment": 0,
+          "desire": 0,
+          "intention": 0,
+          "none": 1,
+          "terminus": 0
+        },
+        "commitment": {
+          "availability": 0,
+          "commitment": 9,
+          "desire": 0,
+          "intention": 0,
+          "none": 0,
+          "terminus": 0
+        },
+        "desire": {
+          "availability": 0,
+          "commitment": 0,
+          "desire": 31,
+          "intention": 0,
+          "none": 2,
+          "terminus": 0
+        },
+        "intention": {
+          "availability": 0,
+          "commitment": 0,
+          "desire": 0,
+          "intention": 41,
+          "none": 0,
+          "terminus": 0
+        },
+        "none": {
+          "availability": 1,
+          "commitment": 0,
+          "desire": 0,
+          "intention": 4,
+          "none": 0,
+          "terminus": 0
+        },
+        "terminus": {
+          "availability": 0,
+          "commitment": 0,
+          "desire": 0,
+          "intention": 0,
+          "none": 11,
+          "terminus": 6
+        }
+      },
+      "inflation": 5,
+      "deflation": 14,
+      "misplacement": 0,
+      "window_relations": {
+        "equal": 42,
+        "wider": 1
+      },
+      "field_errors": {
+        "placed": 6,
+        "retired": 1,
+        "window": 1
+      },
+      "fields_scored": {
+        "capacity": 8,
+        "duration": 35,
+        "parties": 9,
+        "placed": 18,
+        "retired": 18,
+        "serves": 35,
+        "stability": 41,
+        "window": 43
+      },
+      "overreach_unguarded": 4,
+      "overreach_guarded": 2,
+      "over_restraint": 0,
+      "licensed_acts": 34,
+      "conformance_breaches": [],
+      "pass": {
+        "fields": {
+          "overall": {
+            "pass_at_1": {
+              "n": 37,
+              "pass": 34.33333333333333,
+              "rate": 0.9279279279279278,
+              "ci95_low": 0.7987373586744503,
+              "ci95_high": 0.9766185561495654
+            },
+            "pass_hat_k": {
+              "n": 37,
+              "pass": 33,
+              "rate": 0.8918918918918919,
+              "ci95_low": 0.7529146845587398,
+              "ci95_high": 0.9571481005958853
+            }
+          },
+          "restraint/abandon": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 2.6666666666666665,
+              "rate": 0.8888888888888888,
+              "ci95_low": 0.349378550351167,
+              "ci95_high": 0.9916793138393531
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            }
+          },
+          "restraint/adopt": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 2.6666666666666665,
+              "rate": 0.8888888888888888,
+              "ci95_low": 0.349378550351167,
+              "ci95_high": 0.9916793138393531
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            }
+          },
+          "restraint/firm-assent": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/invitation": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/policy-select": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 1,
+              "rate": 0.3333333333333333,
+              "ci95_low": 0.06149194472039621,
+              "ci95_high": 0.7923403991979522
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 1,
+              "rate": 0.3333333333333333,
+              "ci95_low": 0.06149194472039621,
+              "ci95_high": 0.7923403991979522
+            }
+          },
+          "restraint/select": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/availability": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/desire": {
+            "pass_at_1": {
+              "n": 8,
+              "pass": 7.333333333333333,
+              "rate": 0.9166666666666666,
+              "ci95_low": 0.574007057092203,
+              "ci95_high": 0.9889866388378966
+            },
+            "pass_hat_k": {
+              "n": 8,
+              "pass": 6,
+              "rate": 0.75,
+              "ci95_low": 0.40927543031016883,
+              "ci95_high": 0.9285207872478909
+            }
+          },
+          "rung/hedged": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/intention": {
+            "pass_at_1": {
+              "n": 9,
+              "pass": 8,
+              "rate": 0.8888888888888888,
+              "ci95_low": 0.5650002944233439,
+              "ci95_high": 0.9801091123614551
+            },
+            "pass_hat_k": {
+              "n": 9,
+              "pass": 8,
+              "rate": 0.8888888888888888,
+              "ci95_low": 0.5650002944233439,
+              "ci95_high": 0.9801091123614551
+            }
+          },
+          "rung/none": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/policy": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/terminus": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          }
+        },
+        "restraint": {
+          "overall": {
+            "pass_at_1": {
+              "n": 37,
+              "pass": 35.166666666666664,
+              "rate": 0.9504504504504504,
+              "ci95_low": 0.8291854409623631,
+              "ci95_high": 0.9869786799050222
+            },
+            "pass_hat_k": {
+              "n": 37,
+              "pass": 33,
+              "rate": 0.8918918918918919,
+              "ci95_low": 0.7529146845587398,
+              "ci95_high": 0.9571481005958853
+            }
+          },
+          "restraint/abandon": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/adopt": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 1.6666666666666665,
+              "rate": 0.5555555555555555,
+              "ci95_low": 0.15071127201950402,
+              "ci95_high": 0.8980112800077129
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 0,
+              "rate": 0,
+              "ci95_low": 0,
+              "ci95_high": 0.5614970317550454
+            }
+          },
+          "restraint/firm-assent": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 2.5,
+              "rate": 0.8333333333333334,
+              "ci95_low": 0.3099881064419565,
+              "ci95_high": 0.9823472057213465
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            }
+          },
+          "restraint/invitation": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/policy-select": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/select": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/availability": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/desire": {
+            "pass_at_1": {
+              "n": 8,
+              "pass": 6.666666666666666,
+              "rate": 0.8333333333333333,
+              "ci95_low": 0.48697495768585,
+              "ci95_high": 0.9634199990582297
+            },
+            "pass_hat_k": {
+              "n": 8,
+              "pass": 5,
+              "rate": 0.625,
+              "ci95_low": 0.30574239460262737,
+              "ci95_high": 0.8631557141764026
+            }
+          },
+          "rung/hedged": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/intention": {
+            "pass_at_1": {
+              "n": 9,
+              "pass": 8.5,
+              "rate": 0.9444444444444444,
+              "ci95_low": 0.628809736583231,
+              "ci95_high": 0.9941724425993965
+            },
+            "pass_hat_k": {
+              "n": 9,
+              "pass": 8,
+              "rate": 0.8888888888888888,
+              "ci95_low": 0.5650002944233439,
+              "ci95_high": 0.9801091123614551
+            }
+          },
+          "rung/none": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/policy": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/terminus": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          }
+        },
+        "rungs": {
+          "overall": {
+            "pass_at_1": {
+              "n": 37,
+              "pass": 31.333333333333336,
+              "rate": 0.8468468468468469,
+              "ci95_low": 0.6990565856490552,
+              "ci95_high": 0.9293897874188315
+            },
+            "pass_hat_k": {
+              "n": 37,
+              "pass": 30,
+              "rate": 0.8108108108108109,
+              "ci95_low": 0.6579530307016159,
+              "ci95_high": 0.9052002126968799
+            }
+          },
+          "restraint/abandon": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/adopt": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 2.333333333333333,
+              "rate": 0.7777777777777777,
+              "ci95_low": 0.2734158713144525,
+              "ci95_high": 0.9701968888216332
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            }
+          },
+          "restraint/firm-assent": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/invitation": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/policy-select": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "restraint/select": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/availability": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 2.6666666666666665,
+              "rate": 0.8888888888888888,
+              "ci95_low": 0.349378550351167,
+              "ci95_high": 0.9916793138393531
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            }
+          },
+          "rung/desire": {
+            "pass_at_1": {
+              "n": 8,
+              "pass": 7.333333333333333,
+              "rate": 0.9166666666666666,
+              "ci95_low": 0.574007057092203,
+              "ci95_high": 0.9889866388378966
+            },
+            "pass_hat_k": {
+              "n": 8,
+              "pass": 7,
+              "rate": 0.875,
+              "ci95_low": 0.5291118177871464,
+              "ci95_high": 0.9775825085499433
+            }
+          },
+          "rung/hedged": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 2.333333333333333,
+              "rate": 0.7777777777777777,
+              "ci95_low": 0.2734158713144525,
+              "ci95_high": 0.9701968888216332
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            }
+          },
+          "rung/intention": {
+            "pass_at_1": {
+              "n": 9,
+              "pass": 9,
+              "rate": 1,
+              "ci95_low": 0.7008549515804559,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 9,
+              "pass": 9,
+              "rate": 1,
+              "ci95_low": 0.7008549515804559,
+              "ci95_high": 1
+            }
+          },
+          "rung/none": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 3,
+              "rate": 1,
+              "ci95_low": 0.4385029682449546,
+              "ci95_high": 1
+            }
+          },
+          "rung/policy": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 0,
+              "rate": 0,
+              "ci95_low": 0,
+              "ci95_high": 0.5614970317550454
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 0,
+              "rate": 0,
+              "ci95_low": 0,
+              "ci95_high": 0.5614970317550454
+            }
+          },
+          "rung/terminus": {
+            "pass_at_1": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            },
+            "pass_hat_k": {
+              "n": 3,
+              "pass": 2,
+              "rate": 0.6666666666666666,
+              "ci95_low": 0.2076596008020477,
+              "ci95_high": 0.9385080552796037
+            }
+          }
+        }
+      },
+      "extension_calls": {},
+      "judge_calls": 0,
+      "agent_tokens": {
+        "input": 17268619,
+        "output": 153314
+      },
+      "classifier_tokens": {
+        "input": 112248,
+        "output": 12748
+      },
+      "judge_tokens": {
+        "input": 0,
+        "output": 0
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "abandon-boat-01",
+      "classes": [
+        "rung/desire",
+        "restraint/abandon"
+      ],
+      "sha256": "efcb45743006184900161085c1deecc75d1c4a6490bbb8e1d35055ecb97b8013",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 161589,
+              "output": 962
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 161309,
+              "output": 908
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 161776,
+              "output": 1044
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "abandon-italian-01",
+      "classes": [
+        "rung/desire",
+        "restraint/abandon"
+      ],
+      "sha256": "c1d9593667e9234b6c9153817720f4decfc87143a4f1d16fdb7bf371627569ed",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 159453,
+              "output": 750
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 163337,
+              "output": 1025
+            },
+            "tool_calls": 5,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 163210,
+              "output": 987
+            },
+            "tool_calls": 5,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "abandon-novel-01",
+      "classes": [
+        "rung/desire",
+        "restraint/abandon"
+      ],
+      "sha256": "afbcc4aab7586b7751111b0b4cbbbdc893245b74697b5494551c2bba52514d24",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 189967,
+              "output": 1418
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1,
+              "drop": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 160674,
+              "output": 1041
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 189901,
+              "output": 1381
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1,
+              "drop": 1
+            }
+          }
+        ]
+      },
+      "licence_entries": [
+        "drop"
+      ]
+    },
+    {
+      "id": "adopt-piano-01",
+      "classes": [
+        "rung/desire",
+        "restraint/adopt"
+      ],
+      "sha256": "8ec29f65508901b457d222df782455f55dfdabbfddb09b5b29d5d714a4c2d77e",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 316121,
+              "output": 2491
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 2,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 284222,
+              "output": 2057
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "default": 2,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": true
+            },
+            "agent_tokens": {
+              "input": 350880,
+              "output": 2858
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "default": 2,
+              "why": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "adopt-reading-01",
+      "classes": [
+        "rung/desire",
+        "restraint/adopt"
+      ],
+      "sha256": "5062f1a98042d9dedf0f848fa8aee3c048a9bfb74ad872912b8440d2b3160081",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 602768,
+              "output": 5211
+            },
+            "tool_calls": 11,
+            "entries_sent": {
+              "when": 7,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 453003,
+              "output": 4332
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 1,
+              "when": 5,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": true
+            },
+            "agent_tokens": {
+              "input": 563499,
+              "output": 5186
+            },
+            "tool_calls": 10,
+            "entries_sent": {
+              "default": 2,
+              "when": 5,
+              "why": 1
+            }
+          }
+        ]
+      },
+      "licence_entries": [
+        "when"
+      ]
+    },
+    {
+      "id": "adopt-running-01",
+      "classes": [
+        "rung/desire",
+        "restraint/adopt"
+      ],
+      "sha256": "3b0a5075a2f6ef44bb6864f2a8117ddd648f1043e50bc45e40c36aa896c30fd5",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": true
+            },
+            "agent_tokens": {
+              "input": 384559,
+              "output": 2832
+            },
+            "tool_calls": 10,
+            "entries_sent": {
+              "default": 3,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": true
+            },
+            "agent_tokens": {
+              "input": 366055,
+              "output": 3069
+            },
+            "tool_calls": 10,
+            "entries_sent": {
+              "default": 3,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 288756,
+              "output": 2282
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 2,
+              "why": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "availability-saturday-01",
+      "classes": [
+        "rung/availability"
+      ],
+      "sha256": "29abe811424b90deb60ac395faa6946d469a14efd9247bee9ae11d123fef5f95",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109408,
+              "output": 1035
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109375,
+              "output": 1048
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 137546,
+              "output": 1434
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "availability-sunday-01",
+      "classes": [
+        "rung/availability"
+      ],
+      "sha256": "932ef076ab17fa446beac3ccdbd665d9676d5812d83c899c83bfeda8efd35877",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109643,
+              "output": 1121
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109908,
+              "output": 1362
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109626,
+              "output": 1108
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "availability-wednesday-01",
+      "classes": [
+        "rung/availability"
+      ],
+      "sha256": "a6e2a72c45cefe31d285f7123f7f52e5ab998971e651dd34bd18c9155169440e",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 80675,
+              "output": 1157
+            },
+            "tool_calls": 5,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109551,
+              "output": 1069
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109928,
+              "output": 1353
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "desire-accountant-01",
+      "classes": [
+        "rung/desire"
+      ],
+      "sha256": "d5b1a03446879dd07e87ce7d3b3a63994ae7288950ea70bc98d5ace265822d90",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79019,
+              "output": 371
+            },
+            "tool_calls": 3
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106065,
+              "output": 433
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 105614,
+              "output": 477
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "desire-pottery-01",
+      "classes": [
+        "rung/desire"
+      ],
+      "sha256": "6de4b643148c614b43f5bafa4b26f9e32193ed326bbbf507b96fa11f1445250e",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106566,
+              "output": 725
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 105927,
+              "output": 711
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106049,
+              "output": 671
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "firm-dentist-01",
+      "classes": [
+        "rung/intention",
+        "restraint/firm-assent"
+      ],
+      "sha256": "ff9490871725f8d80e51a5f755551649dc1d7124dc171d7b5ca8c87e0b476ec6",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 259058,
+              "output": 2250
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "default": 3
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": true
+            },
+            "agent_tokens": {
+              "input": 230428,
+              "output": 2647
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 2,
+            "failure": "classifier at exchange 4: model refused (cyber): This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 199715,
+              "output": 2597
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "default": 1,
+              "why": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "firm-passport-01",
+      "classes": [
+        "rung/intention",
+        "restraint/firm-assent"
+      ],
+      "sha256": "5788d4bb3705b85801050b9038b28a2a60e0ed3806888cebe9c0548ec7fcb63d",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 226074,
+              "output": 1860
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 230506,
+              "output": 2362
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 3
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 227714,
+              "output": 2191
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "firm-tax-01",
+      "classes": [
+        "rung/intention",
+        "restraint/firm-assent"
+      ],
+      "sha256": "ddadc9aa2d10d94a0c8c706d619a11d356bbc29774c7dc870ee67091455cb36d",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 201884,
+              "output": 1777
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 167954,
+              "output": 1306
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 167098,
+              "output": 1334
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "hedged-garden-01",
+      "classes": [
+        "rung/hedged"
+      ],
+      "sha256": "2705afd54c4d7ac0a184efdf53c93035cfad2bd4dd5d2c3a5b3c0b1cfcb4ab74",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106471,
+              "output": 802
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109046,
+              "output": 1107
+            },
+            "tool_calls": 5,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106448,
+              "output": 857
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "hedged-guitar-01",
+      "classes": [
+        "rung/hedged"
+      ],
+      "sha256": "933385e74aa9d0cc6eef456503bf6e9507d0f6cdf8d4f58937d8f8b7f3b27cbc",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 78467,
+              "output": 490
+            },
+            "tool_calls": 2
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79048,
+              "output": 722
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 78144,
+              "output": 430
+            },
+            "tool_calls": 1,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "hedged-italy-01",
+      "classes": [
+        "rung/hedged"
+      ],
+      "sha256": "6d9c2f8560efd27eb21345d0f8007d9eaa2c4c8d9fd5dfe5a012ca018a327f2f",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 78593,
+              "output": 550
+            },
+            "tool_calls": 2
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106466,
+              "output": 856
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79335,
+              "output": 770
+            },
+            "tool_calls": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "intention-budget-01",
+      "classes": [
+        "rung/intention"
+      ],
+      "sha256": "77cd3255102a37f78e49414e58bc2a7b3cf38a8b644f4da2f38e20a388e45333",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 198367,
+              "output": 2193
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "default": 1,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 257522,
+              "output": 2480
+            },
+            "tool_calls": 10,
+            "entries_sent": {
+              "default": 2,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 196313,
+              "output": 1894
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 1,
+              "why": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "intention-tax-01",
+      "classes": [
+        "rung/intention"
+      ],
+      "sha256": "86fe12a7e812d0ad4cd84fed17c2657d9e85d64526dfc23417aeea9c1c77a117",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 228893,
+              "output": 1887
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "default": 2,
+              "how-long": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 200787,
+              "output": 2826
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "default": 1,
+              "how-long": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 258534,
+              "output": 2687
+            },
+            "tool_calls": 10,
+            "entries_sent": {
+              "default": 1,
+              "how-long": 1,
+              "why": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "invite-accept-01",
+      "classes": [
+        "restraint/invitation"
+      ],
+      "sha256": "9fbcdefe9c35ae4d4d87ab3cc508d252f2736fbf12309fce11c4ed711d87e844",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79776,
+              "output": 620
+            },
+            "tool_calls": 3
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79863,
+              "output": 691
+            },
+            "tool_calls": 4
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79849,
+              "output": 732
+            },
+            "tool_calls": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "invite-ask-01",
+      "classes": [
+        "restraint/invitation"
+      ],
+      "sha256": "42377e5057566770b44e988a86309878ab94dc394fbca847c67aba49a4cad038",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 189465,
+              "output": 1374
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "answer": 1,
+              "default": 3
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106384,
+              "output": 778
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "answer": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 106614,
+              "output": 850
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "answer": 1
+            }
+          }
+        ]
+      },
+      "licence_entries": [
+        "answer"
+      ]
+    },
+    {
+      "id": "invite-clash-decline-01",
+      "classes": [
+        "restraint/invitation"
+      ],
+      "sha256": "fd6edd931f70bcbf5d578b529c103a75945bccfb0b5ca32f4ee7143518551d94",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 108595,
+              "output": 824
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 136767,
+              "output": 1313
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 108563,
+              "output": 879
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "none-board-01",
+      "classes": [
+        "rung/none"
+      ],
+      "sha256": "447baa2ad34ab6efe483483fc4156cf7045439835b5487c72123356fe407abe6",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 52186,
+              "output": 478
+            },
+            "tool_calls": 2
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 78793,
+              "output": 557
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 78824,
+              "output": 555
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "none-lunch-01",
+      "classes": [
+        "rung/none"
+      ],
+      "sha256": "4696ff9b0900a9a237927d0786b9cce5e8e057c84bf2a6bcea09b03e9f9b429e",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 25809,
+              "output": 240
+            },
+            "tool_calls": 0
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 25809,
+              "output": 325
+            },
+            "tool_calls": 0
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 25809,
+              "output": 247
+            },
+            "tool_calls": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "none-run-01",
+      "classes": [
+        "rung/none"
+      ],
+      "sha256": "48f519907e9314d32e7497a3e29a1b92b6013407f47f2b968fa796fad4d82a7e",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 51843,
+              "output": 274
+            },
+            "tool_calls": 0,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 25805,
+              "output": 205
+            },
+            "tool_calls": 0
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 51907,
+              "output": 355
+            },
+            "tool_calls": 0,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy-bank-01",
+      "classes": [
+        "rung/intention",
+        "restraint/policy-select"
+      ],
+      "sha256": "1e608cdc5054c130e56cae45f46a19ff69188ae614310a8132962e1edd59f1f0",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 169063,
+              "output": 1460
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 171056,
+              "output": 1693
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 198637,
+              "output": 1632
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "default": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy-firm-short-01",
+      "classes": [
+        "rung/policy"
+      ],
+      "sha256": "46b0d646e46222305d8d0ab74150ec528082743eba908c91389fd7a241a8f10d",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 80237,
+              "output": 1150
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 80091,
+              "output": 1153
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 107287,
+              "output": 1469
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy-select-short-01",
+      "classes": [
+        "rung/policy"
+      ],
+      "sha256": "45c8ebaf8e4c17ea0537a3e15a40fa6dc61e86c3955d7b88d22ae7ef79c1ba4f",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79154,
+              "output": 846
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "failure": "classifier at exchange 2: model refused (cyber): This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 80007,
+              "output": 1097
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 78906,
+              "output": 891
+            },
+            "tool_calls": 1,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy-select-tentative-01",
+      "classes": [
+        "rung/policy"
+      ],
+      "sha256": "edf7ccfaae9fa25ae79e3c70a35546fedccf9a9521d04671657f1325679d3658",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 52782,
+              "output": 903
+            },
+            "tool_calls": 4
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109291,
+              "output": 1268
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 2
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79635,
+              "output": 994
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy-stretch-01",
+      "classes": [
+        "restraint/policy-select"
+      ],
+      "sha256": "2c709caab7b2af13749b00bd664dea4ecc4e971789e9dac9f44f7ac67cf76fcb",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 147650,
+              "output": 1363
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 110184,
+              "output": 886
+            },
+            "tool_calls": 6,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": true,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 109465,
+              "output": 1118
+            },
+            "tool_calls": 5,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy-stretch-02",
+      "classes": [
+        "restraint/policy-select"
+      ],
+      "sha256": "bf34cdb498098dbc56db63019c82592250bd8b8f59926322d6f8efaa90b3a3f1",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 169207,
+              "output": 1571
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "pick": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 138572,
+              "output": 1253
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "pick": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 169069,
+              "output": 1604
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "pick": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "select-insurance-01",
+      "classes": [
+        "rung/intention",
+        "restraint/select"
+      ],
+      "sha256": "bc04abd512042a3159e7e410530082abb7edc27781a6bf6f0341f49fb6b69c25",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 170273,
+              "output": 1845
+            },
+            "tool_calls": 7,
+            "entries_sent": {
+              "pick": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 197508,
+              "output": 1338
+            },
+            "tool_calls": 10,
+            "entries_sent": {
+              "pick": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 201295,
+              "output": 1693
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "pick": 1
+            }
+          }
+        ]
+      },
+      "licence_entries": [
+        "pick"
+      ]
+    },
+    {
+      "id": "select-report-01",
+      "classes": [
+        "rung/intention",
+        "restraint/select"
+      ],
+      "sha256": "1aa228967a34cee048f3a306f0eb7b77de91e5f5cbdfeaf13139db0ba502587a",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 231002,
+              "output": 2562
+            },
+            "tool_calls": 10,
+            "entries_sent": {
+              "pick": 1,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 268183,
+              "output": 2446
+            },
+            "tool_calls": 11,
+            "entries_sent": {
+              "pick": 1,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 298360,
+              "output": 2742
+            },
+            "tool_calls": 13,
+            "entries_sent": {
+              "pick": 1,
+              "why": 1
+            }
+          }
+        ]
+      },
+      "licence_entries": [
+        "pick"
+      ]
+    },
+    {
+      "id": "select-run-01",
+      "classes": [
+        "rung/intention",
+        "restraint/select"
+      ],
+      "sha256": "781338684e5d8414ec4e8fba8fc9d582dbe950769083823389764343914745cb",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 319085,
+              "output": 2288
+            },
+            "tool_calls": 12,
+            "entries_sent": {
+              "default": 1,
+              "pick": 1,
+              "why": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 168749,
+              "output": 1179
+            },
+            "tool_calls": 9,
+            "entries_sent": {
+              "pick": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 169179,
+              "output": 1472
+            },
+            "tool_calls": 8,
+            "entries_sent": {
+              "pick": 1
+            }
+          }
+        ]
+      },
+      "licence_entries": [
+        "pick"
+      ]
+    },
+    {
+      "id": "terminus-health-01",
+      "classes": [
+        "rung/terminus"
+      ],
+      "sha256": "5ae1936d7a8fa254e9688f2c099d42d15990c83434e432f696c5e8c5f46fccef",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 107254,
+              "output": 1042
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 107240,
+              "output": 1078
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 107240,
+              "output": 1092
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "terminus-present-01",
+      "classes": [
+        "rung/terminus"
+      ],
+      "sha256": "cc5123375662a65ed1cb326549f8385698bdfae3aa835dd72fc2c9d5ef6aeae0",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 108742,
+              "output": 1086
+            },
+            "tool_calls": 5,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 108237,
+              "output": 1133
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": false,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 136405,
+              "output": 1221
+            },
+            "tool_calls": 4,
+            "entries_sent": {
+              "default": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "terminus-writer-01",
+      "classes": [
+        "rung/terminus"
+      ],
+      "sha256": "b9ea36861333f0ebbc4958bc611da0eb7d81e7c36f18701ce4036350e0b60f9f",
+      "runs": {
+        "ref": [
+          {
+            "repeat": 0,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79833,
+              "output": 929
+            },
+            "tool_calls": 3,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 1,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79001,
+              "output": 803
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "default": 1
+            }
+          },
+          {
+            "repeat": 2,
+            "errors": {
+              "rungs": true,
+              "fields": false,
+              "restraint": false
+            },
+            "agent_tokens": {
+              "input": 79235,
+              "output": 933
+            },
+            "tool_calls": 2,
+            "entries_sent": {
+              "default": 1
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
