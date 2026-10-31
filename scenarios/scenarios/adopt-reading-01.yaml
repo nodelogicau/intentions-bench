@@ -1,0 +1,17 @@
+id: adopt-reading-01
+class: [rung/desire, restraint/adopt]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I'd like to read more."
+  - say: "I think I'm ready to make the reading thing a proper plan."
+card:
+  - id: when
+    when: asked when, how long, or how much time to give the reading
+    say: "Two hours on Sunday."
+    licenses: [{act: desire_adopt, key: reading-desire}]
+  - id: why
+    when: asked what the reading is for, or which larger aim it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/adopt-reading-01.yaml

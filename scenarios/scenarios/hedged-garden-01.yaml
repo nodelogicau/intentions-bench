@@ -1,0 +1,9 @@
+id: hedged-garden-01
+class: [rung/hedged]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I'd quite like to sort out the back garden bed before summer, maybe."
+card: []
+default: "I'm not sure yet."
+gold: gold/hedged-garden-01.yaml

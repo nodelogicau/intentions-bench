@@ -1,0 +1,14 @@
+id: abandon-novel-01
+class: [rung/desire, restraint/abandon]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Writing a novel is something I'd like to do eventually."
+  - say: "I'm starting to wonder whether the novel is really for me."
+card:
+  - id: drop
+    when: asked whether to retire, remove, drop or let go of the novel
+    say: "Yes, let it go."
+    licenses: [{act: desire_retire, key: novel}]
+default: "I'm not sure yet."
+gold: gold/abandon-novel-01.yaml

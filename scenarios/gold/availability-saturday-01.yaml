@@ -1,0 +1,5 @@
+- key: "saturday"
+  kind: "availability"
+  title: "Saturday morning"
+  window: {calendar: "2026-10-17", clock: "09:00/12:00"}
+  capacity: "PT3H"

@@ -1,0 +1,16 @@
+id: select-report-01
+class: [rung/intention, restraint/select]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I need ninety minutes for the quarterly report on Thursday. When could I do it? Give me a few options."
+card:
+  - id: pick
+    when: offered candidate placements or times, or asked which one to take for the report
+    say: "The first one works."
+    licenses: [{act: select, key: report}]
+  - id: why
+    when: asked what it is for, why it matters, or which larger aim or reason it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/select-report-01.yaml

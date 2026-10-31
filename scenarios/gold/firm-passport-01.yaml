@@ -1,0 +1,7 @@
+- key: "passport"
+  kind: "intention"
+  title: "Renew the passport"
+  duration: "PT1H"
+  window: {calendar: "2026-10"}
+  stability: "tentative"
+  serves: [follow-through]

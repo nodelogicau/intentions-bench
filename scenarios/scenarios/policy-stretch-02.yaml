@@ -1,0 +1,12 @@
+id: policy-stretch-02
+class: [restraint/policy-select]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/auto-select-policy
+beats:
+  - say: "The stretching session still isn't scheduled."
+card:
+  - id: pick
+    when: offered candidate placements or times, or asked which one to take for the stretching session
+    say: "You choose. That's what my rule about small things is for."
+default: "I'm not sure yet."
+gold: gold/policy-stretch-02.yaml

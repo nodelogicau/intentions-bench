@@ -1,0 +1,12 @@
+- key: "reading-desire"
+  kind: "desire"
+  title: "Read more"
+  retired: "adopted"
+  adopted_as: "reading"
+- key: "reading"
+  kind: "intention"
+  title: "Read"
+  duration: "PT2H"
+  window: {calendar: "2026-10-18"}
+  stability: "tentative"
+  serves: [follow-through]

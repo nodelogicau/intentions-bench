@@ -1,0 +1,13 @@
+format: intentions/0.2
+hash: sha256
+resolver:
+  timezone: Australia/Melbourne
+  hemisphere: south
+  step: PT15M
+  horizon: P4W
+availability:
+  default_horizon: P13W
+defaults:
+  subject: https://example.com/people/ada
+  source:
+    author: https://example.com/people/ada

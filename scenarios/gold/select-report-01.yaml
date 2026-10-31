@@ -1,0 +1,8 @@
+- key: "report"
+  kind: "intention"
+  title: "Write the quarterly report"
+  duration: "PT90M"
+  window: {calendar: "2026-10-15"}
+  stability: "tentative"
+  serves: [follow-through]
+  placed: true

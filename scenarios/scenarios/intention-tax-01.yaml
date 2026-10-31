@@ -1,0 +1,15 @@
+id: intention-tax-01
+class: [rung/intention]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I've got to do my tax return sometime next week."
+card:
+  - id: how-long
+    when: asked how long the tax return will take
+    say: "Probably three hours."
+  - id: why
+    when: asked what the tax return is for, or which larger aim it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/intention-tax-01.yaml

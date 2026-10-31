@@ -2,9 +2,9 @@
 
 Benchmarks for implementations of the [Intentions Format](https://github.com/nodelogicau/intentions).
 
-> **Status: proposed.** Nothing here runs yet. The design and requirements are in
-> [`openspec/changes/scenario-harness/`](openspec/changes/scenario-harness/); this README
-> describes what that change will build.
+> **Status: built, not yet run.** The harness and 37 scenarios are in place; no report has
+> been published yet. The design and requirements are in
+> [`openspec/changes/scenario-harness/`](openspec/changes/scenario-harness/).
 
 Intentions implementations hold what a person means to do; an agent decides what to write
 there. So, as with [particulars-bench](https://github.com/nodelogicau/particulars-bench),
@@ -91,11 +91,39 @@ Recorded in the change's [`design.md`](openspec/changes/scenario-harness/design.
 - **Invitations mentioned only in conversation.** There is no import tool over MCP, so v1
   puts imported commitments in seeds only.
 
+## Running it
+
+Three phases share one run directory under `results/`, and each runs on its own:
+
+```sh
+make build
+# Check the scenario set with the pinned reference CLI and print the plan; no model call.
+dist/intentions-bench run --dry-run --impl ref='intentions serve --mcp --workspace {workspace}'
+# Run every scenario (ANTHROPIC_API_KEY required), then score and report.
+dist/intentions-bench run --impl ref='intentions serve --mcp --workspace {workspace}' --repeats 3
+dist/intentions-bench score
+dist/intentions-bench report
+```
+
+`--classes` and `--ids` select scenarios; `--model`, `--effort`, `--classifier-model` and
+`--judge-model` choose the models. `run` checks every seed and gold workspace with the
+reference CLI named by `--reference-cli`, which must be the version `scenarios/manifest.yaml`
+pins; `score` bounds windows with the same build. The judge is called only when two objects
+tie for a gold key by structure.
+
+## Scenarios
+
+`scenarios/` holds the set: `manifest.yaml` (format version, reference CLI version, and every
+class), one YAML file per scenario under `scenarios/scenarios/`, a gold file per scenario
+under `gold/`, and the seed workspaces under `seeds/`, each with a `keys.yaml` naming the seed
+objects scenarios refer to. `scripts/build-seeds.sh` rebuilds the seeds with the reference CLI.
+
 ## Development
 
 Go, like particulars-bench, whose agent loop, implementation starter, run directory and
-report shell are copied here at a recorded commit rather than shared. CI will run unit tests
-and lint only, with no model calls.
+report shell are copied here at commit `7707285` rather than shared; each copied package
+says so. CI runs unit tests and lint only, with no model calls: `make test`, `make lint`.
+Tests that need the reference CLI run when `intentions` is on PATH and skip otherwise.
 
 ## Licence
 

@@ -1,0 +1,5 @@
+- key: "tentative-select"
+  kind: "terminus"
+  title: "Uncommitted short things get placed without asking"
+  stability: "tentative"
+  auto_select: {max_duration: "PT1H", stability: "tentative"}

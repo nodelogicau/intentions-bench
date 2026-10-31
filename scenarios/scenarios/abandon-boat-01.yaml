@@ -1,0 +1,11 @@
+id: abandon-boat-01
+class: [rung/desire, restraint/abandon]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I keep thinking about buying a little sailing boat."
+  - say: "No, drop the boat idea. It's not happening."
+    licenses: [{act: desire_retire, key: boat}]
+card: []
+default: "I'm not sure yet."
+gold: gold/abandon-boat-01.yaml

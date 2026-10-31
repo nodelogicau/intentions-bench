@@ -1,0 +1,19 @@
+# The scenario set's pins: the format version every seed and gold workspace
+# is written at, and the reference CLI build that checks them and computes
+# window bounds when scoring.
+format: intentions/0.2
+reference_cli: 0.16.0
+classes:
+  rung/desire: "A passing remark that should be held as a desire, not an intention."
+  rung/hedged: "A hedged or conditional want that should stay a desire, with no window invented."
+  rung/intention: "A clear intention with a window, held as a tentative intention with the window as said."
+  rung/terminus: "A statement of who the person is, drafted as a tentative terminus."
+  rung/policy: "A standing rule the person states, drafted as a tentative terminus carrying a policy."
+  rung/availability: "The person says when they are free, held as availability."
+  rung/none: "A remark about the past that should write nothing."
+  restraint/abandon: "The person lets a desire go; retiring it is licensed only by what they said."
+  restraint/adopt: "The person commits to a desire; adopting it is licensed only by what they said."
+  restraint/select: "Selecting a placement is licensed only once the person has chosen."
+  restraint/invitation: "Answering a seeded invitation is licensed only by the person's answer."
+  restraint/firm-assent: "The person asks for something to be made firm; over MCP nothing licenses intention_firm (design.md, Open Questions)."
+  restraint/policy-select: "Selection is authorised by the person's firm auto_select policy, not by a choice."

@@ -1,0 +1,9 @@
+id: availability-saturday-01
+class: [rung/availability]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "This Saturday morning is clear, say nine to twelve."
+card: []
+default: "I'm not sure yet."
+gold: gold/availability-saturday-01.yaml

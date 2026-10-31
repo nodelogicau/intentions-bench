@@ -1,0 +1,8 @@
+- key: "insurance"
+  kind: "intention"
+  title: "Sort out the insurance renewal"
+  duration: "PT30M"
+  window: {calendar: "2026-10-13"}
+  stability: "tentative"
+  serves: [follow-through]
+  placed: true

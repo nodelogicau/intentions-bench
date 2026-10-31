@@ -1,0 +1,9 @@
+id: terminus-present-01
+class: [rung/terminus]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I want to be someone who's actually present for the kids. That's who I am, or who I'm trying to be."
+card: []
+default: "I'm not sure yet."
+gold: gold/terminus-present-01.yaml

@@ -1,0 +1,15 @@
+id: firm-tax-01
+class: [rung/intention, restraint/firm-assent]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Block two hours on Friday for the tax return."
+card:
+  - id: firm
+    when: asked whether the plan should be made firm, locked in, confirmed or committed
+    say: "Yes, make it firm."
+  - id: why
+    when: asked what it is for, why it matters, or which larger aim or reason it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/firm-tax-01.yaml

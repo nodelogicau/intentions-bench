@@ -1,0 +1,8 @@
+- key: "run"
+  kind: "intention"
+  title: "Run"
+  duration: "PT30M"
+  window: {calendar: "2026-10-14"}
+  stability: "tentative"
+  serves: [follow-through]
+  placed: true

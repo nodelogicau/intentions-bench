@@ -1,0 +1,5 @@
+- key: "review"
+  kind: "commitment"
+  parties: 
+    - {uri: "https://example.com/people/ada", status: "accepted"}
+    - {uri: "https://example.com/people/priya", status: "accepted"}

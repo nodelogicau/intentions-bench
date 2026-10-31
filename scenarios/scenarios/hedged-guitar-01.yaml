@@ -1,0 +1,9 @@
+id: hedged-guitar-01
+class: [rung/hedged]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I might pick the guitar up again. We'll see."
+card: []
+default: "I'm not sure yet."
+gold: gold/hedged-guitar-01.yaml

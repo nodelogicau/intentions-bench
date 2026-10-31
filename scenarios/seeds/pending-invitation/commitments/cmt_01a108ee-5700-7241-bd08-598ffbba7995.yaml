@@ -1,0 +1,19 @@
+id: cmt_01a108ee-5700-7241-bd08-598ffbba7995
+version: sha256:b8dabd0e5af1b013f771c2b1f184f4c262a180cc7be9c6e3ab4059c7f9a3a7d5
+parties:
+  - uri: https://example.com/people/ada
+    status: tentative
+  - uri: https://example.com/people/priya
+    status: accepted
+placement:
+  start: 2026-10-15T14:00:00+11:00
+  duration: PT1H
+origin: import
+external:
+  system: icalendar
+  uid: review-20261015@example.com
+title: Quarterly review with Priya
+source:
+  author: https://example.com/people/ada
+timestamp: 2026-10-04T22:00:00Z
+acknowledgements: []

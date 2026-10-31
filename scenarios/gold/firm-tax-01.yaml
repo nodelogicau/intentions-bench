@@ -1,0 +1,7 @@
+- key: "tax"
+  kind: "intention"
+  title: "Do the tax return"
+  duration: "PT2H"
+  window: {calendar: "2026-10-16"}
+  stability: "tentative"
+  serves: [follow-through]

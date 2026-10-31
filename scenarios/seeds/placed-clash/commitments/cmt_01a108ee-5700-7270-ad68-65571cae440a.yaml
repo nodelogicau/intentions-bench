@@ -1,0 +1,19 @@
+id: cmt_01a108ee-5700-7270-ad68-65571cae440a
+version: sha256:1ba2192b491a78dbb142d5cdf5576c353e4c8ecd950e8b6498cb4a49049691e4
+parties:
+  - uri: https://example.com/people/ada
+    status: tentative
+  - uri: https://example.com/people/northwind
+    status: accepted
+placement:
+  start: 2026-10-14T10:00:00+11:00
+  duration: PT1H
+origin: import
+external:
+  system: icalendar
+  uid: demo-20261014@northwind.example
+title: Northwind product demo
+source:
+  author: https://example.com/people/ada
+timestamp: 2026-10-04T22:00:00Z
+acknowledgements: []

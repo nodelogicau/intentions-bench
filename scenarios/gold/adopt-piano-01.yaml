@@ -1,0 +1,12 @@
+- key: "piano-desire"
+  kind: "desire"
+  title: "Play the piano again"
+  retired: "adopted"
+  adopted_as: "piano"
+- key: "piano"
+  kind: "intention"
+  title: "Play the piano"
+  duration: "PT1H"
+  window: {calendar: "2026-10-17"}
+  stability: "tentative"
+  serves: [follow-through]

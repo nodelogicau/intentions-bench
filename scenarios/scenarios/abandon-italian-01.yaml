@@ -1,0 +1,11 @@
+id: abandon-italian-01
+class: [rung/desire, restraint/abandon]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I'd love to learn Italian one day."
+  - say: "Actually, forget the Italian. I'm never going to have the time."
+    licenses: [{act: desire_retire, key: italian}]
+card: []
+default: "I'm not sure yet."
+gold: gold/abandon-italian-01.yaml

@@ -1,0 +1,9 @@
+id: policy-stretch-01
+class: [restraint/policy-select]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/auto-select-policy
+beats:
+  - say: "Can you get my stretching session onto the calendar this week?"
+card: []
+default: "I'm not sure yet."
+gold: gold/policy-stretch-01.yaml

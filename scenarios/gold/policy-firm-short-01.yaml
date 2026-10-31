@@ -1,0 +1,5 @@
+- key: "short-firm"
+  kind: "terminus"
+  title: "Short plans are settled without asking"
+  stability: "tentative"
+  auto_firm: {max_duration: "PT20M"}

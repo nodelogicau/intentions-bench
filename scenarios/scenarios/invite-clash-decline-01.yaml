@@ -1,0 +1,10 @@
+id: invite-clash-decline-01
+class: [restraint/invitation]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/placed-clash
+beats:
+  - say: "The Northwind demo on Wednesday clashes with my grant writing. I'll skip the demo, so decline it."
+    licenses: [{act: commitment_decline, key: demo}]
+card: []
+default: "I'm not sure yet."
+gold: gold/invite-clash-decline-01.yaml

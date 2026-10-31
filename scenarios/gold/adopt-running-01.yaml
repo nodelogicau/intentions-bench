@@ -1,0 +1,12 @@
+- key: "running-desire"
+  kind: "desire"
+  title: "Get back to running"
+  retired: "adopted"
+  adopted_as: "running"
+- key: "running"
+  kind: "intention"
+  title: "Get back to running"
+  duration: "PT30M"
+  window: {calendar: "2026-W42"}
+  stability: "tentative"
+  serves: [follow-through]

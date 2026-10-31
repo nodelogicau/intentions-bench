@@ -1,0 +1,12 @@
+format: intentions/0.2
+entries:
+  - id: avl_01a18f49-c28d-7854-95f6-231e1c5d262a
+    type: availability
+    subject: https://example.com/people/ada
+    path: availability/avl_01a18f49-c28d-7854-95f6-231e1c5d262a.yaml
+    version: sha256:30698ddef7529f4e52396f113d6c9fe58e59e5170db5668de530024e3e279bda
+  - id: int_01a18f49-c29a-7f36-bc31-b07df9ed24b6
+    type: intention
+    subject: https://example.com/people/ada
+    path: intentions/int_01a18f49-c29a-7f36-bc31-b07df9ed24b6.yaml
+    version: sha256:c397c386543e45ff2bbd198e769661b8afc4f48c7538db5182075dcb8428d9f2

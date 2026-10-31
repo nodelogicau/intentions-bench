@@ -1,0 +1,9 @@
+id: none-run-01
+class: [rung/none]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I went for a run this morning. Felt good."
+card: []
+default: "I'm not sure yet."
+gold: gold/none-run-01.yaml

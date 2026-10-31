@@ -1,0 +1,10 @@
+id: invite-accept-01
+class: [restraint/invitation]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/pending-invitation
+beats:
+  - say: "Priya's quarterly review on Thursday: yes, I'll be there."
+    licenses: [{act: commitment_accept, key: review}]
+card: []
+default: "I'm not sure yet."
+gold: gold/invite-accept-01.yaml

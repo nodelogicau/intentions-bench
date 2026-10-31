@@ -1,0 +1,9 @@
+id: terminus-health-01
+class: [rung/terminus]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Looking after my health is part of who I am now."
+card: []
+default: "I'm not sure yet."
+gold: gold/terminus-health-01.yaml

@@ -1,0 +1,9 @@
+id: policy-firm-short-01
+class: [rung/policy]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "Anything twenty minutes or less, treat it as settled once it's planned. No need to ask me."
+card: []
+default: "I'm not sure yet."
+gold: gold/policy-firm-short-01.yaml

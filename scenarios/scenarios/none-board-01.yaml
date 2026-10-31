@@ -1,0 +1,9 @@
+id: none-board-01
+class: [rung/none]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "The board meeting last Tuesday went fine, thanks."
+card: []
+default: "I'm not sure yet."
+gold: gold/none-board-01.yaml

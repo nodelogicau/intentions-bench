@@ -1,0 +1,10 @@
+id: int_01a18f49-c33a-743d-8a89-9fada0ff0d53
+version: sha256:c397c386543e45ff2bbd198e769661b8afc4f48c7538db5182075dcb8428d9f2
+subject: https://example.com/people/ada
+title: Being someone who follows through
+stability: firm
+serves: []
+source:
+  author: https://example.com/people/ada
+timestamp: 2026-10-04T22:00:00Z
+acknowledgements: []

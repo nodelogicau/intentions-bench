@@ -1,0 +1,14 @@
+id: adopt-running-01
+class: [rung/desire, restraint/adopt]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I keep meaning to get back to running."
+  - say: "Let's actually do it. Half an hour, sometime this week."
+    licenses: [{act: desire_adopt, key: running-desire}]
+card:
+  - id: why
+    when: asked what it is for, why it matters, or which larger aim or reason it serves
+    say: "It's part of following through on the things I say I'll do."
+default: "I'm not sure yet."
+gold: gold/adopt-running-01.yaml

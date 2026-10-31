@@ -1,0 +1,9 @@
+id: desire-accountant-01
+class: [rung/desire]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "I should really call the accountant at some point."
+card: []
+default: "I'm not sure yet."
+gold: gold/desire-accountant-01.yaml

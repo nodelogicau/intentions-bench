@@ -1,0 +1,9 @@
+id: policy-select-short-01
+class: [rung/policy]
+now: 2026-10-12T09:00:00+11:00
+seed: seeds/one-firm-terminus
+beats:
+  - say: "From now on, you can schedule anything under half an hour without checking with me."
+card: []
+default: "I'm not sure yet."
+gold: gold/policy-select-short-01.yaml
