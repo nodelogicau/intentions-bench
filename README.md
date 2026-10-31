@@ -2,8 +2,10 @@
 
 Benchmarks for implementations of the [Intentions Format](https://github.com/nodelogicau/intentions).
 
-> **Status: built, not yet run.** The harness and 37 scenarios are in place; no report has
-> been published yet. The design and requirements are in
+> **Status: first run reported.** The harness and 37 scenarios are in place; the first report,
+> intentions 0.16.0 with a Haiku 5.5 agent, is in
+> [`reports/2026-10-31-intentions-0.16.0-haiku-5-5/`](reports/2026-10-31-intentions-0.16.0-haiku-5-5/report.md).
+> The design and requirements are in
 > [`openspec/changes/scenario-harness/`](openspec/changes/scenario-harness/).
 
 Intentions implementations hold what a person means to do; an agent decides what to write
