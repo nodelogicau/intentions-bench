@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/score"
 )
 
@@ -240,6 +240,9 @@ func Markdown(r *Report) string {
 		fmt.Fprintf(&b, "- Selection: classes %v, ids %v\n", r.Selection.Classes, r.Selection.IDs)
 	}
 	fmt.Fprintf(&b, "- Harness commit `%s`\n", r.HarnessCommit)
+	if r.AgentLoop != "" {
+		fmt.Fprintf(&b, "- agentloop %s\n", r.AgentLoop)
+	}
 	for _, im := range r.Impls {
 		var servers []string
 		for _, s := range im.ServerInfo {

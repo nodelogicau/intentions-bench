@@ -7,7 +7,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/scenario"
 	"github.com/nodelogicau/intentions-bench/internal/workspace"
 	"github.com/nodelogicau/intentions-bench/prompts"

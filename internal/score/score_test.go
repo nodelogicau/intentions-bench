@@ -12,7 +12,7 @@ import (
 
 	"github.com/anthropics/anthropic-sdk-go"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/refcli"
 	"github.com/nodelogicau/intentions-bench/internal/run"
 	"github.com/nodelogicau/intentions-bench/internal/scenario"

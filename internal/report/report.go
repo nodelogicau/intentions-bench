@@ -12,7 +12,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/impl"
 	"github.com/nodelogicau/intentions-bench/internal/run"
 	"github.com/nodelogicau/intentions-bench/internal/scenario"
@@ -156,6 +156,7 @@ type Report struct {
 	Schema        string            `json:"schema"`
 	Date          time.Time         `json:"date"`
 	HarnessCommit string            `json:"harness_commit"`
+	AgentLoop     string            `json:"agentloop,omitempty"`
 	ScenarioSet   run.ScenarioSet   `json:"scenario_set"`
 	Selection     run.Selection     `json:"selection"`
 	ReferenceCLI  string            `json:"reference_cli"`
@@ -185,7 +186,7 @@ type Input struct {
 func Build(in Input) *Report {
 	m := in.Meta
 	r := &Report{
-		Schema: Schema, Date: in.Now.UTC(), HarnessCommit: m.HarnessCommit, ScenarioSet: m.ScenarioSet, Selection: m.Selection,
+		Schema: Schema, Date: in.Now.UTC(), HarnessCommit: m.HarnessCommit, AgentLoop: m.AgentLoop, ScenarioSet: m.ScenarioSet, Selection: m.Selection,
 		ReferenceCLI: m.ReferenceCLI, Agent: m.Agent, Classifier: m.Classifier, Judge: m.Judge, Prompts: m.Prompts,
 		Repeats: m.Repeats, MaxExchanges: m.MaxExchanges, Classes: map[string]string{}, Notes: Notes,
 	}

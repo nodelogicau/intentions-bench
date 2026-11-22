@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/impl"
 )
 
@@ -46,12 +46,14 @@ type Selection struct {
 // Meta is fixed when a run starts: its scenarios, implementations, models,
 // prompts and settings.
 type Meta struct {
-	Created       time.Time   `json:"created"`
-	HarnessCommit string      `json:"harness_commit"`
-	ScenarioSet   ScenarioSet `json:"scenario_set"`
-	Selection     Selection   `json:"selection"`
-	ScenarioIDs   []string    `json:"scenario_ids"`
-	Impls         []impl.Impl `json:"impls"`
+	Created       time.Time `json:"created"`
+	HarnessCommit string    `json:"harness_commit"`
+	// AgentLoop is the agentloop module version the agent loop came from.
+	AgentLoop   string      `json:"agentloop,omitempty"`
+	ScenarioSet ScenarioSet `json:"scenario_set"`
+	Selection   Selection   `json:"selection"`
+	ScenarioIDs []string    `json:"scenario_ids"`
+	Impls       []impl.Impl `json:"impls"`
 	// ReferenceCLI is the version of the reference CLI binary that checked
 	// the set; scoring computes window bounds with the same build.
 	ReferenceCLI string         `json:"reference_cli"`
@@ -75,7 +77,8 @@ type Message struct {
 	Kind  string `json:"kind,omitempty"`
 	Entry string `json:"entry,omitempty"`
 	Beat  int    `json:"beat,omitempty"`
-	// Capped marks an agent message whose loop hit the turn cap.
+	// Capped marks an agent message whose loop hit the turn cap, or whose
+	// last response was cut at max_tokens.
 	Capped bool `json:"capped,omitempty"`
 }
 

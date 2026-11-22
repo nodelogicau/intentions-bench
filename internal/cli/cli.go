@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/impl"
 )
 
@@ -213,6 +213,22 @@ func split(s string) []string {
 		}
 	}
 	return out
+}
+
+// agentloopVersion is the agentloop module version built in, so that a
+// change of agent loop shows in the run's metadata.
+func agentloopVersion() string {
+	if bi, ok := debug.ReadBuildInfo(); ok {
+		for _, d := range bi.Deps {
+			if d.Path == "github.com/nodelogicau/agentloop" {
+				if d.Replace != nil {
+					return d.Version + " => " + d.Replace.Path + " " + d.Replace.Version
+				}
+				return d.Version
+			}
+		}
+	}
+	return "unknown"
 }
 
 func harnessCommit() string {

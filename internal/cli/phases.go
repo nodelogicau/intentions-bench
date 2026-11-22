@@ -101,7 +101,7 @@ func runRun(ctx context.Context, o *options, d Deps) error {
 		return err
 	}
 	meta := run.Meta{
-		Created: d.Now().UTC(), HarnessCommit: harnessCommit(), Selection: run.Selection{Classes: o.classes, IDs: o.ids},
+		Created: d.Now().UTC(), HarnessCommit: harnessCommit(), AgentLoop: agentloopVersion(), Selection: run.Selection{Classes: o.classes, IDs: o.ids},
 		Impls: o.impls, ReferenceCLI: version, Agent: o.agent, Classifier: o.classifier, Judge: o.judge,
 		Prompts: prompts.Hashes(), Repeats: o.repeats, MaxExchanges: o.maxExchanges,
 		ScenarioSet: run.ScenarioSet{Source: set.Root, Scenarios: map[string]string{}, Format: set.Manifest.Format, ReferenceCLI: set.Manifest.ReferenceCLI},
