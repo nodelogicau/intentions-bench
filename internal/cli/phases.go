@@ -51,10 +51,11 @@ func printPlan(w io.Writer, o *options, set *scenario.Set, sel []*scenario.Scena
 	// takes 1 to max-turns agent calls and at most one classifier call.
 	msgsMin, msgsMax := beats, beats*(1+o.maxExchanges)
 	scale := len(o.impls) * o.repeats
-	fmt.Fprintf(w, "  agent %s (effort %s): %d to %d model calls over %d scenario runs\n",
-		o.agent.Model, o.agent.Effort, msgsMin*scale, msgsMax*o.agent.MaxTurns*scale, runs)
-	fmt.Fprintf(w, "  classifier %s (effort %s): up to %d model calls\n", o.classifier.Model, o.classifier.Effort, msgsMax*scale)
-	fmt.Fprintf(w, "  judge %s (effort %s): called by score only when structure ties\n", o.judge.Model, o.judge.Effort)
+	roles := o.runRoles()
+	fmt.Fprintf(w, "  agent: %s\n    %d to %d model calls over %d scenario runs\n",
+		describeRole(roles[0]), msgsMin*scale, msgsMax*o.agent.MaxTurns*scale, runs)
+	fmt.Fprintf(w, "  classifier: %s\n    up to %d model calls\n", describeRole(roles[1]), msgsMax*scale)
+	fmt.Fprintf(w, "  judge: %s\n    called by score only when structure ties\n", describeRole(role{"judge", o.judge, o.judgeKeyEnv}))
 }
 
 func runRun(ctx context.Context, o *options, d Deps) error {
@@ -122,12 +123,11 @@ func runRun(ctx context.Context, o *options, d Deps) error {
 		return err
 	}
 
-	key := d.Getenv(APIKeyVar)
-	agentModel, err := d.NewProvider(o.agent, key)
+	agentModel, err := d.NewProvider(o.agent, d.Getenv(o.agentKeyEnv))
 	if err != nil {
 		return err
 	}
-	classifierModel, err := d.NewProvider(o.classifier, key)
+	classifierModel, err := d.NewProvider(o.classifier, d.Getenv(o.classifierKeyEnv))
 	if err != nil {
 		return err
 	}
@@ -241,12 +241,13 @@ func runScore(ctx context.Context, o *options, d Deps) error {
 		return fmt.Errorf("reference CLI %s is version %s; run %s was checked with %s, and windows must be bounded by the same build", o.referenceCLI, version, l.dir.Path, l.meta.ReferenceCLI)
 	}
 	sc := &score.Scorer{CLI: cli, JudgeSettings: l.meta.Judge}
-	if key := d.Getenv(APIKeyVar); key != "" {
+	keyEnv := judgeKeyEnv(o, l.meta.Judge)
+	if key := d.Getenv(keyEnv); key != "" {
 		if sc.Judge, err = d.NewProvider(l.meta.Judge, key); err != nil {
 			return err
 		}
 	} else {
-		fmt.Fprintf(d.Stderr, "note: %s is not set; a run whose objects tie by structure cannot be judged and will fail scoring\n", APIKeyVar)
+		fmt.Fprintf(d.Stderr, "note: %s is not set; a run whose objects tie by structure cannot be judged and will fail scoring\n", keyEnv)
 	}
 	byID := map[string]*scenario.Scenario{}
 	for _, s := range l.scenarios {

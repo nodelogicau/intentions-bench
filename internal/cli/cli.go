@@ -25,11 +25,6 @@ import (
 	"github.com/nodelogicau/intentions-bench/internal/impl"
 )
 
-// APIKeyVar holds the Anthropic API key.
-const APIKeyVar = "ANTHROPIC_API_KEY"
-
-var efforts = []string{"low", "medium", "high", "xhigh", "max"}
-
 // Deps are the command's connections to the outside world.
 type Deps struct {
 	Stdout, Stderr io.Writer
@@ -59,8 +54,12 @@ Phases:
            restraint; the judge model is called only when structure ties
   report   write report.json (intentions-bench-report/1) and report.md
 
-run refuses to start without ANTHROPIC_API_KEY, except with --dry-run, which
-prints the plan and exits without calling a model.
+run refuses to start without the API key of each provider it calls
+(ANTHROPIC_API_KEY for anthropic, OPENAI_API_KEY for openai, or the variable
+--api-key-env / --classifier-api-key-env names), except with --dry-run, which
+prints the plan and exits without calling a model. score calls the judge only
+when objects tie by structure, keyed by --judge-api-key-env or by the judge's
+provider as the run recorded it.
 
 Run 'intentions-bench <phase> -h' for flags.
 `
@@ -97,9 +96,13 @@ func Run(ctx context.Context, args []string, d Deps) int {
 		fmt.Fprintf(d.Stderr, "intentions-bench %s: %v\n", phase, err)
 		return 2
 	}
-	if phase == "run" && !o.dryRun && d.Getenv(APIKeyVar) == "" {
-		fmt.Fprintf(d.Stderr, "intentions-bench run: %s is not set; refusing to start a phase that calls a model (use --dry-run to see the plan)\n", APIKeyVar)
-		return 1
+	if phase == "run" && !o.dryRun {
+		for _, r := range o.runRoles() {
+			if d.Getenv(r.keyEnv) == "" {
+				fmt.Fprintf(d.Stderr, "intentions-bench run: %s is not set; refusing to start a phase that calls a model (use --dry-run to see the plan)\n", r.keyEnv)
+				return 1
+			}
+		}
 	}
 	if err := fn(ctx, o, d); err != nil {
 		fmt.Fprintf(d.Stderr, "intentions-bench %s: %v\n", phase, err)
@@ -124,6 +127,15 @@ type options struct {
 	agent        agent.Settings
 	classifier   agent.Settings
 	judge        agent.Settings
+	// The variables holding each role's API key.
+	agentKeyEnv, classifierKeyEnv, judgeKeyEnv string
+	// set names the flags given on the command line.
+	set map[string]bool
+}
+
+// runRoles are the model roles the run phase calls.
+func (o *options) runRoles() []role {
+	return []role{{"agent", o.agent, o.agentKeyEnv}, {"classifier", o.classifier, o.classifierKeyEnv}}
 }
 
 type listFlag []string
@@ -142,6 +154,8 @@ func parseFlags(phase string, args []string, stderr io.Writer) (*options, error)
 	o := &options{phase: phase}
 	var impls listFlag
 	var classes, ids string
+	var agentF, classifierF, judgeF roleFlags
+	providers := strings.Join(agent.Providers, ", ")
 	fs.Var(&impls, "impl", "implementation under test, `label='command … {workspace} …'` (repeatable)")
 	fs.StringVar(&o.scenarios, "scenarios", "scenarios", "scenario set directory (run phase)")
 	fs.StringVar(&classes, "classes", "", "comma-separated classes; run only scenarios carrying one of them")
@@ -161,6 +175,21 @@ func parseFlags(phase string, args []string, stderr io.Writer) (*options, error)
 	fs.StringVar(&o.classifier.Effort, "classifier-effort", "low", "classifier effort")
 	fs.StringVar(&o.judge.Model, "judge-model", "claude-opus-5-5", "judge model (score phase, ties only)")
 	fs.StringVar(&o.judge.Effort, "judge-effort", "low", "judge effort")
+	for _, r := range []struct {
+		prefix, what string
+		f            *roleFlags
+		s            *agent.Settings
+		keyEnv       *string
+	}{
+		{"", "the agent", &agentF, &o.agent, &o.agentKeyEnv},
+		{"classifier-", "the classifier", &classifierF, &o.classifier, &o.classifierKeyEnv},
+		{"judge-", "the judge", &judgeF, &o.judge, &o.judgeKeyEnv},
+	} {
+		fs.StringVar(&r.f.provider, r.prefix+"provider", agent.ProviderAnthropic, "provider for "+r.what+": "+providers)
+		fs.StringVar(&r.s.BaseURL, r.prefix+"base-url", "", "API base URL for "+r.what+" (openai default: "+agent.DefaultOpenAIBaseURL+")")
+		fs.StringVar(r.keyEnv, r.prefix+"api-key-env", "", "`variable` holding the API key for "+r.what+" (default: ANTHROPIC_API_KEY or OPENAI_API_KEY by provider)")
+		fs.StringVar(&r.f.extraBody, r.prefix+"extra-body", "", "JSON object merged into every request body for "+r.what)
+	}
 	if err := fs.Parse(args); err != nil {
 		return nil, err
 	}
@@ -169,10 +198,16 @@ func parseFlags(phase string, args []string, stderr io.Writer) (*options, error)
 	}
 	o.classifier.MaxTokens, o.classifier.MaxTurns = 4000, 1
 	o.judge.MaxTokens, o.judge.MaxTurns = 4000, 1
-	for name, e := range map[string]string{"effort": o.agent.Effort, "classifier-effort": o.classifier.Effort, "judge-effort": o.judge.Effort} {
-		if e != "" && !contains(efforts, e) {
-			return nil, fmt.Errorf("--%s %q: use one of %v", name, e, efforts)
-		}
+	o.set = map[string]bool{}
+	fs.Visit(func(f *flag.Flag) { o.set[f.Name] = true })
+	if err := configureRole("", agentF, &o.agent, &o.agentKeyEnv, o.set); err != nil {
+		return nil, err
+	}
+	if err := configureRole("classifier-", classifierF, &o.classifier, &o.classifierKeyEnv, o.set); err != nil {
+		return nil, err
+	}
+	if err := configureRole("judge-", judgeF, &o.judge, &o.judgeKeyEnv, o.set); err != nil {
+		return nil, err
 	}
 	seen := map[string]bool{}
 	for _, s := range impls {

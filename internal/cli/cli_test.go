@@ -65,6 +65,36 @@ func TestRefusesWithoutKey(t *testing.T) {
 	}
 }
 
+func TestRefusesWithoutEachRolesKey(t *testing.T) {
+	// The agent's key is set; the classifier calls openai, whose key is not.
+	e := &env{vars: map[string]string{"ANTHROPIC_API_KEY": "test"}}
+	code := cli.Run(context.Background(), []string{"run", "--scenarios", "../../scenarios", "--impl", "ref=x {workspace}",
+		"--classifier-provider", "openai"}, e.deps())
+	if code != 1 || !strings.Contains(e.errb.String(), "OPENAI_API_KEY is not set") || e.providers != 0 {
+		t.Errorf("exit %d, stderr %q", code, e.errb.String())
+	}
+}
+
+func TestDryRunPlanNamesEachRole(t *testing.T) {
+	e := &env{vars: map[string]string{}}
+	code := cli.Run(context.Background(), []string{"run", "--dry-run", "--scenarios", "../../scenarios", "--results", t.TempDir(),
+		"--impl", "ref=intentions serve --mcp --workspace {workspace}", "--classes", "rung/none",
+		"--provider", "openai", "--model", "gpt-5", "--base-url", "http://localhost:11434/v1", "--api-key-env", "LOCAL_KEY"}, e.deps())
+	if code != 0 {
+		t.Fatalf("exit %d: %s", code, e.errb.String())
+	}
+	out := e.out.String()
+	for _, want := range []string{
+		"agent: openai gpt-5 at http://localhost:11434/v1, key LOCAL_KEY",
+		"classifier: anthropic claude-opus-5-5 at SDK default, key ANTHROPIC_API_KEY (effort low)",
+		"judge: anthropic claude-opus-5-5 at SDK default, key ANTHROPIC_API_KEY (effort low)",
+	} {
+		if !strings.Contains(out, want) {
+			t.Errorf("plan lacks %q:\n%s", want, out)
+		}
+	}
+}
+
 func TestFlags(t *testing.T) {
 	e := &env{vars: map[string]string{}}
 	for _, args := range [][]string{
