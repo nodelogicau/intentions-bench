@@ -101,7 +101,7 @@ Three phases share one run directory under `results/`, and each runs on its own:
 make build
 # Check the scenario set with the pinned reference CLI and print the plan; no model call.
 dist/intentions-bench run --dry-run --impl ref='intentions serve --mcp --workspace {workspace}'
-# Run every scenario (ANTHROPIC_API_KEY required), then score and report.
+# Run every scenario (each role's API key required; see Providers), then score and report.
 dist/intentions-bench run --impl ref='intentions serve --mcp --workspace {workspace}' --repeats 3
 dist/intentions-bench score
 dist/intentions-bench report
@@ -112,6 +112,48 @@ dist/intentions-bench report
 reference CLI named by `--reference-cli`, which must be the version `scenarios/manifest.yaml`
 pins; `score` bounds windows with the same build. The judge is called only when two objects
 tie for a gold key by structure.
+
+### Providers
+
+Each model role names a provider. The roles are the agent, the classifier and the judge:
+
+| Role | Flags |
+|---|---|
+| agent | `--provider`, `--base-url`, `--api-key-env`, `--extra-body` |
+| classifier | the same, prefixed `--classifier-` |
+| judge | the same, prefixed `--judge-` |
+
+The providers:
+
+- `anthropic` (default): the Anthropic Messages API, key `ANTHROPIC_API_KEY`. Its settings are
+  recorded as before providers existed.
+- `openai`: any OpenAI-compatible Chat Completions endpoint at the base URL (default
+  `https://api.openai.com/v1`), key `OPENAI_API_KEY`.
+  - Effort is sent as `reasoning_effort` only when its flag is given, because non-reasoning
+    models reject it.
+  - Efforts are checked against what each provider accepts.
+
+The other flags:
+
+- `--api-key-env` and its prefixed forms name another variable holding the key. A local
+  server that needs no key still needs that variable set to something, so that calling a
+  model stays an explicit choice.
+- `--extra-body` takes a JSON object merged into every request of that role unchanged. Use it,
+  for example, to pin a router's upstream with fallbacks disabled.
+
+```sh
+# Agent on an open-weight model through OpenRouter; classifier and judge stay on Claude.
+export OPENROUTER_API_KEY=...
+dist/intentions-bench run --impl ref='intentions serve --mcp --workspace {workspace}' \
+    --provider openai --base-url https://openrouter.ai/api/v1 --api-key-env OPENROUTER_API_KEY \
+    --model qwen/qwen3-235b-a22b --extra-body '{"provider": {"order": ["<upstream>"], "allow_fallbacks": false}}'
+```
+
+`run` refuses to start unless the agent's and the classifier's keys are set, and its plan
+names each role's provider, endpoint and key variable. The judge's settings are fixed when
+the run starts. `score` takes the judge's key from `--judge-api-key-env`, or else from the
+default variable for the judge's recorded provider. Each call records the upstream that
+served it, when a router names one, in the run records' usage.
 
 ## Scenarios
 
