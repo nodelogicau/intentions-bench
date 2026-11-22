@@ -6,6 +6,7 @@ import (
 	"errors"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"reflect"
 	"strings"
 	"testing"
@@ -13,7 +14,7 @@ import (
 
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/fakeserver"
 	"github.com/nodelogicau/intentions-bench/internal/impl"
 	"github.com/nodelogicau/intentions-bench/internal/run"
@@ -50,7 +51,8 @@ func TestStartFakeServer(t *testing.T) {
 	if srv.Info != (impl.ServerInfo{Name: "fake-intentions", Version: "2.3.4"}) {
 		t.Errorf("serverInfo %+v", srv.Info)
 	}
-	if !strings.Contains(srv.Instructions, srv.Workspace) || !strings.Contains(srv.Instructions, "Harness intentions-bench") {
+	abs, _ := filepath.EvalSymlinks(ws)
+	if !strings.Contains(srv.Instructions, abs) || !strings.Contains(srv.Instructions, "Harness intentions-bench") {
 		t.Errorf("{workspace} or INTENTIONS_HARNESS not passed: %q", srv.Instructions)
 	}
 	r, err := srv.CallTool(context.Background(), "intention_firm", json.RawMessage(`{"id":"`+testutil.TerminusID+`"}`))

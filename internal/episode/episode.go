@@ -17,7 +17,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nodelogicau/intentions-bench/internal/agent"
+	"github.com/nodelogicau/agentloop/agent"
 	"github.com/nodelogicau/intentions-bench/internal/impl"
 	"github.com/nodelogicau/intentions-bench/internal/run"
 	"github.com/nodelogicau/intentions-bench/internal/scenario"

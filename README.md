@@ -122,9 +122,11 @@ objects scenarios refer to. `scripts/build-seeds.sh` rebuilds the seeds with the
 
 ## Development
 
-Go, like particulars-bench, whose agent loop, implementation starter, run directory and
-report shell are copied here at commit `7707285` rather than shared; each copied package
-says so. CI runs unit tests and lint only, with no model calls: `make test`, `make lint`.
+Go, like particulars-bench. The agent loop, its providers and the MCP client come from
+[agentloop](https://github.com/nodelogicau/agentloop), pinned in `go.mod`; each run's
+`meta.json` and report record the version used. `internal/impl` adds only the intentions
+adapter contract on top. The run directory and report shell are still copied from
+particulars-bench at commit `7707285`, and say so. CI runs unit tests and lint only, with no model calls: `make test`, `make lint`.
 Tests that need the reference CLI run when `intentions` is on PATH and skip otherwise.
 
 ## Licence
